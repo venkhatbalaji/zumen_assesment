@@ -1,0 +1,14 @@
+.input-fields{
+    margin-top: 5em;
+    margin-left: 10em;
+    width: 80em;
+    height: 5em;
+    box-sizing: border-box;
+}
+.error-message{
+    margin-top: 2em;
+    margin-left: 30em;
+    width:10em;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
