@@ -1,14 +1,28 @@
 .input-fields{
     margin-top: 5em;
-    margin-left: 10em;
+    margin-left: 5em;
     width: 80em;
     height: 5em;
     box-sizing: border-box;
 }
 .error-message{
+    display: none;
     margin-top: 2em;
     margin-left: 30em;
     width:10em;
     box-sizing: border-box;
     border: 2px solid red;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+.flight-list-items{
+    text-align: center;
+    margin-left: 30em;
+    padding: 2px 16px;
+}
+.flight-list-items ul{
+    list-style-type: none;
 }
