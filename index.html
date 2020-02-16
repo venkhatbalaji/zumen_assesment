@@ -9,7 +9,7 @@
 
 <body>
     <div>
-        <div class="input-fields">
+        <div id='flight-input' class="input-fields">
             <label>Name : </label><input type="text" id="Name" placeholder="Name..."></input>
             <label>Origin : </label><input type="text" id="Origin" placeholder="Orgin..."></input>
             <label>Destination : </label><input type="text" id="Destination" placeholder="Destination..."></input>
@@ -17,15 +17,19 @@
             <label>Rating : </label><input type="text" id="Rating" placeholder="Ratting..."></input>
             <div class="error-message" id="error">Enter all the inputs</div>            
         </div>
-        <button onclick="addItem()">Add</button>
-        <div class="flight-list-items">
+        <button class="btn" onclick="addItem()">Add</button>
+        <div class="btn-sorting">
+            <input type="button" id='sortBtnPrice' onclick="sortByPrice()" value="Sort by price (Asc)">
+            <input type="button" id='sortBtnRating' onclick="sortByRating()" value="Sort by Rating (Asc)">
+        </div>
+        <div id='flightList' class="flight-list-items">
             <div class="card">
                 <h4>Sample Name1</h4>
                 <ul>
                     <li>FlightName : Sample Name1</li>
                     <li>FlightOgin : Sample Orgin</li>
                     <li>FlightDestination : Sample Destination</li>
-                    <li>FlightPrics : 10</li>
+                    <li>FlightPrice : 10</li>
                     <li>FlightRating : 5</li>
                 </ul>
             </div>
@@ -35,30 +39,12 @@
                     <li>FlightName : Sample Name2</li>
                     <li>FlightOgin : Sample Orgin</li>
                     <li>FlightDestination : Sample Destination</li>
-                    <li>FlightPrics : 10</li>
+                    <li>FlightPrice : 100</li>
                     <li>FlightRating : 5</li>
                 </ul>
             </div>
         </div>
     </div>
-    <script>
-        window.flightList = [
-            {
-                FlightName: "Sample Name1",
-                FlightOgin: "Sample Orgin",
-                FlightDestination: "Sample Destination",
-                FlightPrics: 10,
-                FlightRating: 5
-            },
-            {
-                FlightName: "Sample Name2",
-                FlightOgin: "Sample Orgin",
-                FlightDestination: "Sample Destination",
-                FlightPrics: 10,
-                FlightRating: 5
-            }
-        ]
-    </script>
 </body>
 
 </html>

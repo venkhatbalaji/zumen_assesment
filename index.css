@@ -1,6 +1,6 @@
 .input-fields{
     margin-top: 5em;
-    margin-left: 5em;
+    margin-left: 9em;
     width: 80em;
     height: 5em;
     box-sizing: border-box;
@@ -19,10 +19,23 @@
   width: 40%;
 }
 .flight-list-items{
+    margin-top: 2em;
     text-align: center;
     margin-left: 30em;
     padding: 2px 16px;
 }
 .flight-list-items ul{
     list-style-type: none;
+}
+.btn{
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 50em;
+}
+.btn-sorting{
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 35em;
 }
